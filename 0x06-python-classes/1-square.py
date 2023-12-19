@@ -2,6 +2,7 @@
 
 """Write a class Square that defines a square by: (based on 0-square.py)"""
 
+
 class Square:
 
     """Represent square"""
@@ -13,5 +14,5 @@ class Square:
         Args:
             size (int): The size of the new square.
         """
-        
+
         self.__size = size
