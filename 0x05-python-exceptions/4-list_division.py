@@ -15,5 +15,5 @@ def list_division(my_list_1, my_list_2, list_length):
             print("out of range")
             i = 0
         finally:
-            new_list.append(div)
+            new_list.append(i)
     return (new_list) 
