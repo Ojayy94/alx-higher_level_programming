@@ -65,7 +65,7 @@ class Rectangle:
         draw = []
         for i in range(self.__height):
             [draw.append('#') for index in range(self.__width)]
- 
+
             if i != self.__height - 1:
                 draw.append("\n")
         return "".join(draw)
