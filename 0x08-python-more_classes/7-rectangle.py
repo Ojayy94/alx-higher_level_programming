@@ -69,7 +69,7 @@ class Rectangle:
 
         draw = []
         for i in range(self.__height):
-            [draw.append('#') for index in range(self.__width)]
+            [draw.append(str(self.print_symbol)) for index in range(self.__width)]
 
             if i != self.__height - 1:
                 draw.append("\n")
