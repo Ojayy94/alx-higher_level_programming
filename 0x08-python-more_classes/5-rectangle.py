@@ -82,7 +82,7 @@ class Rectangle:
         Print the message Bye rectangle...
 
         (... being 3 dots not ellipsis)
-        
+
         then an instance of Rectangle is deleted
         """
 
