@@ -8,5 +8,6 @@ def inherits_from(obj, a_class):
        otherwise False
     """
 
-    if isinstance(obj, a_class) and issubclass(a_class, obj.__class) is False:
+    if isinstance(obj, a_class) and issubclass(a_class, obj.__class__)\
+       is False:
         return True
