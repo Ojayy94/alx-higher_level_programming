@@ -7,5 +7,5 @@ def append_write(filename="", text=""):
        If the file doesn’t exist, it should be created
        returns the number of characters added
     """
-    with open(filename, mode='a', encodin='utf-8') as f:
+    with open(filename, mode='a', encoding='utf-8') as f:
         return f.write(text)
