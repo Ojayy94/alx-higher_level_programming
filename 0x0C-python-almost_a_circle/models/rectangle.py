@@ -89,3 +89,31 @@ class Rectangle:
         """
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args, **kwargs):
+        """pdate the class Rectangle by adding the public method"""
+        arg = len(args)
+        kwarg = len(kwargs)
+        attributes = ['id', 'width', 'height', 'x', 'y']
+
+        if arg > 5:
+            arg = 5
+
+        if arg > 0:
+            for i in range(arg):
+                setattr(self, attributes[i], args[i])
+
+        elif kwarg > 0:
+            for k, v in kwargs.items():
+                if k in attributes:
+                    setattr(self, k, v)
+
+    def to_dictionary(self):
+        """public attributes"""
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
