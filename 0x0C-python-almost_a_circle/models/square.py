@@ -25,3 +25,30 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """adding the public method that assigns attributes"""
+        arg = len(args)
+        kwarg = len(kwargs)
+        attributes = ['id', 'size', 'x', 'y']
+
+        f arg > 4:
+            arg = 4
+
+        if arg > 0:
+            for i in range(arg):
+                setattr(self, attributes[i], args[i])
+
+        elif kwarg > 0:
+            for k, v in kwargs.items():
+                if k in attributes:
+                    setattr(self, k, v)
+
+    def to_dictionary(self):
+        """public attributes"""
+        return {
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y
+        }
