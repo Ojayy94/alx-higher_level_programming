@@ -14,3 +14,23 @@ class Rectangle:
         self.x = x
         self.y = y
         super().__init__(id)
+
+    @property
+    def width(self):
+        """width paerameter"""
+        return self.__width
+
+    @property
+    def height(self):
+        """height parameter"""
+        return self.__height
+
+    @property
+    def x(self):
+        """x parameter"""
+        return self.__x
+
+    @property
+    def y(self):
+        """y parameter"""
+        return self.__y
