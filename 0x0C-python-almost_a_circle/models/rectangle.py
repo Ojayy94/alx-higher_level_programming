@@ -70,3 +70,9 @@ class Rectangle:
     def area(self):
         """that returns the area value of the Rectangle instance"""
         return (self.width * self.height)
+
+    def display(self):
+        """prints in stdout the Rectangle instance with the character #"""
+        if self.height == 0 or self.width == 0:
+            print("")
+            return
