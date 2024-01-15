@@ -77,6 +77,12 @@ class Rectangle:
             print("")
             return
 
+        [print("") for y in range(self.y)]
+        for i in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for j in range(self.width)]
+            print("")
+
     def __str__(self):
         """Update the class Rectangle by overriding the __str__ method so
            it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
