@@ -76,3 +76,10 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             print("")
             return
+
+    def __str__(self):
+        """Update the class Rectangle by overriding the __str__ method so
+           it returns [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+            self.id, self.x, self.y, self.width, self.height)
