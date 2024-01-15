@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """creating a base class"""
+import json
+import os
 
 
 class Base:
@@ -25,6 +27,18 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """Update the class Base by adding the static method"""
-        If list_dictionaries is None or list_dictionaries == []:
+        if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """writes the JSON string representation of list_objs to a file"""
+
+        filename = cls.__name__ + '.json'
+        with open(filename, mode='w', encoding='utf-8') as file:
+            if list_objs is None:
+                file.write('[]')
+            else:
+                list_dicts = [i.to_dictionary() for i in list_objs]
+                jsonfile.write(Base.to_json_string(list_dicts))
