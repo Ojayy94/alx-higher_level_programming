@@ -3,7 +3,7 @@
 from models.rectangle import Rectangle
 
 
-class Square:
+class Square(Rectangle):
     """Class Square inherits from Rectangle"""
     def def __init__(self, size, x=0, y=0, id=None):
         """clas constructor"""
@@ -15,3 +15,8 @@ class Square:
         """
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
             self.id, self.x, self.y, self.width)
+
+    @property
+    def width(self):
+        """width parameter"""
+        return self.width
