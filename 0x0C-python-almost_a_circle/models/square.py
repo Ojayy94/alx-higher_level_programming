@@ -32,7 +32,7 @@ class Square(Rectangle):
         kwarg = len(kwargs)
         attributes = ['id', 'size', 'x', 'y']
 
-        f arg > 4:
+        if arg > 4:
             arg = 4
 
         if arg > 0:
