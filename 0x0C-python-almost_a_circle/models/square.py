@@ -9,13 +9,6 @@ class Square(Rectangle):
         """clas constructor"""
         super().__init__(size, size, x, y, id)
 
-    def __str__(self):
-        """overloading __str__ method should return [Square] (<id>)
-           <x>/<y> - <size> - in our case, width or height
-        """
-        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
-            self.id, self.x, self.y, self.width)
-
     @property
     def size(self):
         """width parameter"""
@@ -52,3 +45,10 @@ class Square(Rectangle):
             'x': self.x,
             'y': self.y
         }
+
+    def __str__(self):
+        """overloading __str__ method should return [Square] (<id>)
+           <x>/<y> - <size> - in our case, width or height
+        """
+        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(
+            self.id, self.x, self.y, self.width)
