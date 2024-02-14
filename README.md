@@ -1,1 +1,1 @@
-My ALX first higher level programming
+More SQL queries
