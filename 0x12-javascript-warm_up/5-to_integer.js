@@ -1,10 +1,10 @@
 #!/usr/bin/node
-count = process.argv;
+const count = process.argv;
 const myNum = parseInt(count[2]);
 
 if (myNum) {
   console.log('My number: ' + myNum);
-} else if (myNum === NaN) {
+} else if (myNum === isNaN) {
   console.log('Not a number');
 } else {
   console.log('Not a number');
