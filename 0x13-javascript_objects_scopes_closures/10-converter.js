@@ -5,4 +5,4 @@ exports.converter = function (base) {
     return i.toString(base);
   }
   return convert;
-}
+};
