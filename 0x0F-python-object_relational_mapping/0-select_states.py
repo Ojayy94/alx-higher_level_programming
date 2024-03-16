@@ -6,8 +6,8 @@ import sys
 
 
 if __name__ == '__main__':
-    """our script should take 3 arguments: mysql username, mysq
-    \password and database name (no argument validation needed)
+    """our script should take 3 arguments: mysql username, mysql
+    password and database name (no argument validation needed)
 
     You must use the module MySQLdb (import MySQLdb)
 
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     """
 
     db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-            passwd=argv[2], db=argv[3])
+                         passwd=argv[2], db=argv[3])
 
     script = db.cursor()
     script.execute(`SELECT * FROM states`)
