@@ -21,7 +21,7 @@ if __name__ == '__main__':
                          passwd=argv[2], db=argv[3])
 
     script = db.cursor()
-    script.execute("SELECT * FROM states ORDER BY ASC")
+    script.execute("SELECT * FROM states")
     show = script.fetchall()
 
     for shows in show:
