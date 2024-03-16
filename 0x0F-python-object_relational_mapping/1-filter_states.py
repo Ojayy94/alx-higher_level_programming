@@ -21,8 +21,7 @@ if __name__ == '__main__':
                          passwd=argv[2], db=argv[3])
 
     script = db.cursor()
-    script.execute("SELECT * FROM `states`
-                   WHERE name LIKE 'N%'
+    script.execute("SELECT * FROM states WHERE name LIKE 'N%'
                    ORDER BY states.id ASC")
     show = script.fetchall()
 
