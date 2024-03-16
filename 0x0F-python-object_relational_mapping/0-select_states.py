@@ -24,5 +24,5 @@ if __name__ == '__main__':
     script.execute("SELECT * FROM states ORDER BY ASC")
     show = script.fetchall()
 
-    for i in show:
-        print(i)
+    for shows in show:
+        print(shows)
