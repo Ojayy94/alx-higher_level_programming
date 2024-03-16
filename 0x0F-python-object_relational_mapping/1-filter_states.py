@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     script = db.cursor()
     script.execute("SELECT * FROM states WHERE name LIKE 'N%'
-                   ORDER BY states.id")
+                   ORDER BY states.id ASC")
     show = script.fetchall()
 
     for shows in show:
