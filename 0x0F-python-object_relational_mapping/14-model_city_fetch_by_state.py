@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """A script that lists all states from the database hbtn_0e_0_usa"""
 
-from model_state import State
+from model_state import Base, State
 from model_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -26,7 +26,11 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=db)
     session = Session()
 
+    query = session.query(City, State).join(State)
+
     for city, state in session.query(City, State) \
                               .filter(City.state_id == State.id) \
                               .order_by(City.id):
         print("{}: ({}) {}".format(state.name, city.id, city.name))
+    session.commit()
+    session.close()
