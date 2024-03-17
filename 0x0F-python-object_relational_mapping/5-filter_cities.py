@@ -28,4 +28,4 @@ if __name__ == '__main__':
     show = script.fetchall()
 
     if shows is not None:
-        print(", ".join([show[1] for shows in show]))
+        print(", ".join([show[2] for shows in show if show[4] == argv[4]]))
