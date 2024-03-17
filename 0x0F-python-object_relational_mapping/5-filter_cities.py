@@ -28,5 +28,5 @@ if __name__ == '__main__':
     show = script.fetchall()
 
     for shows in show:
-        if shows[1] == argv[4]:
-            print(', '.join(shows))
+        if shows is not None:
+            print(", ".join(shows))
