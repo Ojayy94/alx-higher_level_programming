@@ -27,6 +27,5 @@ if __name__ == '__main__':
                  ORDER BY cities.id ASC")
     show = script.fetchall()
 
-    for shows in show:
-        if shows is not None:
-            print(", ".join(shows))
+    if shows is not None:
+        print(", ".join([show[1] for shows in show]))
