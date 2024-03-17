@@ -24,6 +24,7 @@ if __name__ == '__main__':
     script.execute("SELECT * FROM cities \
                  INNER JOIN states \
                  ON cities.state_id = states.id \
+                 WHERE states.name LIKE BINARY %(state_name)s
                  ORDER BY cities.id ASC")
     show = script.fetchall()
 
