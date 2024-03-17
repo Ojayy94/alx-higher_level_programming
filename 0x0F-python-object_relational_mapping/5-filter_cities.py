@@ -27,4 +27,4 @@ if __name__ == '__main__':
                  ORDER BY cities.id ASC")
     show = script.fetchall()
 
-    print(", ".join([show[2] for shows in show if shows[4] == argv[4]]))
+    print(", ".join([shows[2] for shows in show if shows[4] == argv[4]]))
