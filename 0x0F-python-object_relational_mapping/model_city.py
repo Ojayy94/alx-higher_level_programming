@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 """A python gile that contains a class definition and an instance Base"""
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
+from sqlalchemy import Column, Integer, String, ForeignKey
+from model_state import Base, State
 
 
 class City(Base):
