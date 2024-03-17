@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
     script = db.cursor()
     script.execute("SELECT * FROM states \
-                 WHERE name LIKE BINARY = '{}' \
+                 WHERE name = {} \
                  ORDER BY states.id ASC".format(argv[4]))
     show = script.fetchall()
 
