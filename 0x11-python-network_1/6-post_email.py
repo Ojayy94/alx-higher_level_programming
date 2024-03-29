@@ -19,5 +19,5 @@ if __name__ == "__main__":
     e_mail = argv[1]
     req = {"email": argv[2]}
 
-    re = requests.post(e_mail, data =req)
+    re = requests.post(e_mail, data=req)
     print(re.text)
