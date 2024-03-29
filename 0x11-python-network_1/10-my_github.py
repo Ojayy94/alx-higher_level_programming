@@ -4,7 +4,7 @@
 
    You must use Basic Authentication with a personal access token as password
    to access to your information (only read:user permission is needed)
-   
+
    The first argument will be your username
 
    The second argument will be your password (in your case,
