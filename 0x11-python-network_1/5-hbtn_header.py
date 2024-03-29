@@ -11,7 +11,8 @@
    You don’t need to check script arguments (number and type)
    """
 
-import sys, requests
+import sys
+import requests
 
 
 if __name__ == "__main__":
