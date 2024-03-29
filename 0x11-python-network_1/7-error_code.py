@@ -15,7 +15,7 @@ import requests
 from sys import argv
 
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     re = requests.get(argv[1])
 
     if re.status_code >= 400:
