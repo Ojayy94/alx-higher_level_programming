@@ -1,1 +1,1 @@
-More SQL queries
+0x15. JavaScript - Web jQuery
